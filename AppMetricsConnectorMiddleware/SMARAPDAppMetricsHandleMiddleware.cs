@@ -29,9 +29,6 @@ namespace AppOwinAppMetrics.Middlewares.Metrics
         private int _errors4xx;
         private int _errors5xx;
 
-
-        public string _hostname { get; set; }
-
         public SMARAPDAppMetricsHandleMiddleware(AppFunc next, string client, string application, string environment, int interval = 30)
         {
             _next = next;
